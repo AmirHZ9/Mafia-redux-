@@ -7,6 +7,7 @@ import ShowChracter from "./components/ShowChracter";
 //Redux
 import { Provider } from "react-redux";
 import store from "./Redux/store";
+import God from "./components/God";
 
 
 function App() {
@@ -16,6 +17,7 @@ function App() {
         <Routes>
           <Route path="/Chracter" element={<SelectCharacter />} />
           <Route path="/ShowChracter" element={<ShowChracter />} />
+          <Route path="/GOD" element={<God />} />
           <Route path="/" element={<AddPlayer />} />
         </Routes>
       </div>

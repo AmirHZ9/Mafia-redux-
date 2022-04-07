@@ -1,0 +1,30 @@
+.mafia button,
+.shahrvand button{
+    padding: 15px;
+    font-weight:800;
+    cursor: pointer;
+}
+.selectedShahrvand{
+    background-color:#FFD124 ;
+ 
+}
+.selectedMafia{
+    background-color:#B20600 ;
+    color: #EEEEEE;
+ 
+}
+.mafia,
+.shahrvand{
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+}
+.chracters{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+ img{
+    height: 350px;
+}

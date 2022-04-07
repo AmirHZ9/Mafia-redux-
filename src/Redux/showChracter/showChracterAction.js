@@ -5,5 +5,12 @@ const showChracter = (chracters,name) => {
         name:name
     }
 }
+const showRole = (chracters,name) => {
+    return{
+        type:"SHOW_ROLE",
+        chracters:chracters,
+        name:name
+    }
+}
 
-export {showChracter}
+export {showChracter,showRole}
