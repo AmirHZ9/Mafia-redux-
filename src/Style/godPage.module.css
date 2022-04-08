@@ -1,5 +1,6 @@
 .role{
     display: flex;
+    align-items: baseline;
      color: #00092C;
     width: 200px;
     background-color: #EEEEEE;
