@@ -7,19 +7,26 @@ const chractersReducer = (state = initialState, action) => {
     case "SELECT_CHRACTER":
       if (!state.chracters.find((item) => item === action.payload)) {
         state.chracters.push(action.payload);
-        return {
+      } 
+      return {
+        ...state,
+        chracters: [...state.chracters],
+      };
+    case "INCREASE" :
+        state.chracters.push(action.payload)
+
+        return{
           ...state,
-          chracters: [...state.chracters],
-        };
-      } else {
-        const newchracter = state.chracters.filter(
-          (item) => item !== action.payload
-        );
-        return {
+          chracters:[...state.chracters]
+        }
+    case "DECREASE" :
+        const indexD = state.chracters.findIndex(item => item == action.payload)
+        state.chracters.splice(indexD,1)
+        return{
           ...state,
-          chracters: [...newchracter],
-        };
-      }
+          chracters:[...state.chracters]
+        }
+      
 
     default:
       return state;

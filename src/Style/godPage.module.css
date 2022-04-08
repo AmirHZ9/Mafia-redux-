@@ -1,0 +1,10 @@
+.role{
+    display: flex;
+     color: #00092C;
+    width: 200px;
+    background-color: #EEEEEE;
+    justify-content: center;
+    margin: 10px auto;
+    padding: 10px;
+    border-radius: 8px;
+}

@@ -4,6 +4,8 @@ import { Link } from 'react-router-dom'
 import { v4 } from 'uuid'
 import { showRole } from '../Redux/showChracter/showChracterAction'
 import styles from "../Style/showChracter.module.css"
+import herfei from '../assets/pic/herfei.jpg'
+import mashughe from '../assets/pic/mashuqe.jpg'
 export default function ShowChracter() {
     const playerRoles = useSelector(state => state.showChracterState.playerRoles)    
     const dispatch = useDispatch()
@@ -12,7 +14,14 @@ export default function ShowChracter() {
 
     
     return (
-    <div>
+    <div >
+        <div className={styles.container}>
+            
+        <div>
+            <img src={herfei} alt="herfei" />
+        </div>
+        <div className={styles.showChracter}>
+
         {
            playerRoles.map(item =>
             <div key={v4()}> 
@@ -23,7 +32,12 @@ export default function ShowChracter() {
 
            )
        }
+        </div>
        <div>
+           <img src={mashughe} alt="" />
+       </div>
+        </div>
+       <div className={styles.startButton}>
             <Link to="/GOD">شروع بازی</Link>
        </div>
     </div>

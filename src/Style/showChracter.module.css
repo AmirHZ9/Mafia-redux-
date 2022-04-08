@@ -1,4 +1,26 @@
-.disable{
-    cursor: not-allowed;
-    pointer-events: none;
- }
+body {
+  background-color: #00092c;
+}
+.container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 50px;
+}
+.showChracter button {
+  padding: 10px;
+  border-radius: 8px;
+  margin: 10px;
+  cursor: pointer;
+  min-width: 200px;
+}
+
+.startButton a {
+  margin: 12px;
+  background-color: #eeeeee;
+  text-decoration: none;
+  color: #00092c;
+  padding: 8px;
+  border-radius: 8px;
+  font-weight: 500;
+}
