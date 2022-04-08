@@ -23,7 +23,7 @@ export default function SelectCharacter() {
   return (
     <div>
       <div className={styles.shahrvand}>
-        <div className={styles.chracterCart}>
+        <div >
           <h2>نقش های شهروند</h2>
           <div className={styles.chracters}>
             {shahrvanRoles.map((item) => (
@@ -75,8 +75,8 @@ export default function SelectCharacter() {
         <div>
           <img src={godfather} alt="godfather" />
         </div>
-        <div className={styles.chracters}>
-          <div className={styles.chracterCart} >
+        <div >
+          <div >
             <h2>نقش های مافیا</h2>
 
             <div className={styles.chracters}>

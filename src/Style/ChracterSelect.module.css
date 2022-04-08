@@ -1,104 +1,96 @@
-button{
-    outline: none;
-    border: none;
-
+button {
+  outline: none;
+  border: none;
 }
-.addChracter{
-    padding: 15px;
-    font-weight:800;
-    cursor: pointer;
-    margin: 5px;
-    border-radius: 8px;
-    
-
+.addChracter {
+  padding: 15px;
+  font-weight: 800;
+  cursor: pointer;
+  margin: 5px;
+  border-radius: 8px;
 }
 
-.selectedShahrvand{
-    padding: 15px;
-    font-weight:800;
-    cursor: pointer;
-    border-radius: 8px;
-    background-color:#4D96FF ;
- 
+.selectedShahrvand {
+  padding: 15px;
+  font-weight: 800;
+  cursor: pointer;
+  border-radius: 8px;
+  background-color: #4d96ff;
 }
-.chracterCart{
-    max-width: 500px;
-}
-.selectedMafia{
-    padding: 15px;
-    font-weight:800;
-    cursor: pointer;
-    border-radius: 8px;
-    background-color:#B20600 ;
-    color: #EEEEEE;
- 
+
+.selectedMafia {
+  padding: 15px;
+  font-weight: 800;
+  cursor: pointer;
+  border-radius: 8px;
+  background-color: #b20600;
+  color: #eeeeee;
 }
 .mafia,
-.shahrvand{
-    display: flex;
-    flex-direction: row;
-    padding: 10px;
-    
-    justify-content: center;
-  
+.shahrvand {
+  display: flex;
+  flex-direction: row;
+  padding: 10px;
+
+  justify-content: center;
 }
-.chracters{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
+.chracters {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  width: 500px;
+  margin: auto;
 }
 
- img{
-    height: 350px;  
+img {
+  height: 350px;
 }
 .selectCharButton button {
-    margin: 12px;
-    background-color: #EEEEEE;
-    text-decoration: none;
-    color: #00092c;
-    padding: 8px;
-    border-radius: 8px;
-    font-weight: 500;
-  }
-  .AddChracterButton{
-      display: flex;
-    align-items: center;
-  }
-  .IncreaseButton{
+  margin: 12px;
+  background-color: #eeeeee;
+  text-decoration: none;
+  color: #00092c;
+  padding: 8px;
+  border-radius: 8px;
+  font-weight: 500;
+}
+.AddChracterButton {
+  display: flex;
+  align-items: center;
+}
+.IncreaseButton {
+  display: flex;
+  flex-direction: column;
+}
+.IncreaseButton button {
+  margin: 1px;
+  padding: 2px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 20px;
+  min-height: 20px;
+  cursor: pointer;
+}
+
+.startButton a {
+  width: 200px;
+  padding-left: 20px;
+  padding-right: 20px;
+  color: #00092c;
+  text-decoration: none;
+  font-size: large;
+}
+
+@media screen and (max-width: 850px) {
+  .mafia,
+  .shahrvand {
     display: flex;
     flex-direction: column;
-
-      }
-      .IncreaseButton button{
-          margin: 1px;
-          padding: 2px;
-          border-radius: 5px;
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          min-width: 20px;
-          min-height: 20px;
-          cursor: pointer;
-      }
-
-      .startButton a{
-          width: 200px;
-         padding-left: 20px;
-         padding-right: 20px;
-         color: #00092c;
-         text-decoration: none;
-         font-size: large;
-         
-      }
-
-  @media screen and (max-width : 850px){
-      .mafia,
-    .shahrvand{
-        display: flex;
-        flex-direction: column;
-        padding: 10px;
-    }
-    .image{
-        order: -1;
-    }
+    padding: 10px;
   }
+  .image {
+    order: -1;
+  }
+}
