@@ -1,6 +1,7 @@
 .container {
   background-color: #00092c;
   height: 100%;
+  margin-top: 50px;
 }
 input {
   outline: none;
@@ -41,7 +42,8 @@ input {
   border-radius: 8px 0 0 8px;
 }
 .selectCharButton {
-  margin: 12px auto;
+  margin: 30px auto;
+  
 }
 .selectCharButton a {
   margin: 12px;

@@ -1,0 +1,15 @@
+.menu{
+    display: flex;
+    justify-content: space-between;
+    background-color: #EEEEEE;
+}
+.menu li{
+    padding: 15px;
+    color: #00092C;
+    list-style-type: none;
+    font-weight: 800;
+}
+.menu li a{ 
+    color: #00092C;
+    text-decoration: none;
+}

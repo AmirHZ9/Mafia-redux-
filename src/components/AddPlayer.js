@@ -8,7 +8,16 @@ export default function AddPlayer() {
   const nameState = useSelector((state) => state.playerState);
   const dispatch = useDispatch();
 
-  const playerHandler = () => {
+  const playerHandler = (event) => {
+    if (event.keyCode === 13) {
+      if (name.length == 0) {
+      } else {
+        dispatch(addPlayer(name));
+        setName("");
+      }
+    }
+  };
+  const playerHandlerOnClick = () => {
     if (name.length == 0) {
     } else {
       dispatch(addPlayer(name));
@@ -18,15 +27,16 @@ export default function AddPlayer() {
 
   return (
     <div className={styles.container}>
-      <h2> تعداد بازیکنان({nameState.player.length})</h2>
+      <h2> لیست بازیکنان({nameState.player.length})</h2>
 
       <input
         type="text"
         value={name}
         placeholder="نام بازیکن را وارد کنید"
         onChange={(event) => setName([event.target.value])}
+        onKeyDown={playerHandler}
       />
-      <button onClick={playerHandler} className={styles.addPlayerButton}>
+      <button onClick={playerHandlerOnClick} className={styles.addPlayerButton}>
         +
       </button>
 
@@ -57,7 +67,6 @@ export default function AddPlayer() {
         ) : (
           <Link to="/Chracter">انتخاب نقش ها</Link>
         )}
-        
       </div>
     </div>
   );

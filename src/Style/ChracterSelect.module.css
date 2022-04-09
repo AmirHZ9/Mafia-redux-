@@ -38,20 +38,16 @@ button {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
-  width: 500px;
+  max-width: 500px;
   margin: auto;
 }
 
 img {
   height: 350px;
 }
-.selectCharButton button {
-  margin: 12px;
-  background-color: #eeeeee;
-  text-decoration: none;
-  color: #00092c;
-  padding: 8px;
-  border-radius: 8px;
+.selectCharButton {
+  margin: 30px;
+
   font-weight: 500;
 }
 .AddChracterButton {
@@ -74,13 +70,15 @@ img {
   cursor: pointer;
 }
 
-.startButton a {
+.startButton {
   width: 200px;
-  padding-left: 20px;
-  padding-right: 20px;
+  background-color: #eeeeee;
+  padding: 10px 10px;
+
   color: #00092c;
   text-decoration: none;
   font-size: large;
+  border-radius: 10px;
 }
 
 @media screen and (max-width: 850px) {
