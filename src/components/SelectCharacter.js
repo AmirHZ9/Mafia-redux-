@@ -123,9 +123,6 @@ export default function SelectCharacter() {
 
       <div className={styles.selectCharButton}>
         {chracter.length == name.length ? (
-          // <button className={styles.startButton} onClick={() => dispatch(showChracter(chracter, name))}>
-          //   <Link to="/ShowChracter">تقسیم نقش</Link>
-          // </button>
             <Link to="/ShowChracter" className={styles.startButton} onClick={() => dispatch(showChracter(chracter, name))}>تقسیم نقش</Link>
         ) : (
           <div>

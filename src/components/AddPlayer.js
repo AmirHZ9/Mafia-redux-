@@ -3,10 +3,13 @@ import { Link } from "react-router-dom";
 import { useSelector, useDispatch } from "react-redux";
 import { addPlayer, removePlayer } from "../Redux/player/playerAction";
 import styles from "../Style/playerName.module.css";
+
 export default function AddPlayer() {
+
   const [name, setName] = useState("");
   const nameState = useSelector((state) => state.playerState);
   const dispatch = useDispatch();
+   
 
   const playerHandler = (event) => {
     if (event.keyCode === 13) {

@@ -2,6 +2,8 @@ const initialState = {
   playerRoles: [],
 };
 const showCharReducer = (state = initialState, action) => {
+  const Swal= require('sweetalert2')
+  
   switch (action.type) {
     case "SHOW":
       state.playerRoles=[]
@@ -23,7 +25,16 @@ const showCharReducer = (state = initialState, action) => {
       };
 
       case "SHOW_ROLE":
-        window.alert(`${action.name} : ${action.chracters}`)
+        Swal.fire({
+          title: "",
+          text: `${action.name} : ${action.chracters}`,
+          type: "success",
+          confirmButtonColor: '#00092c',
+          confirmButtonText: 'تایید',
+          closeOnConfirm: false,
+          closeOnCancel: false
+      })
+
       state.playerRoles.find(item =>{if(item.name === action.name){
           
       
